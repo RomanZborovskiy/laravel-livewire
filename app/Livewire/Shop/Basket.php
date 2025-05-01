@@ -40,8 +40,8 @@ class Basket extends Component
     }
     public function sendTelegramMessage()
     {
-        $token = '8192772425:AAGcYkf3qkRaFVma2FxscjctjlR5HfDcXrA';
-        $chat_id = '384586711';
+        $token = env('TELEGRAM_BOT_TOKEN');
+        $chat_id = env('TELEGRAM_CHAT_ID');
         $name = Auth::user()->name;
         $total_price = Cart::total();
         $message = "📦 New order:\n\n👤 Name:{$name} \n";
