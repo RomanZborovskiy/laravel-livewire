@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Http;
 class Basket extends Component
 {
     public $status ='true';
-    protected $listeners = ['cartUpdated' => '$refresh'];
+    //protected $listeners = ['cartUpdated' => '$refresh'];
 
     public function store(){
         $order = Order::create([

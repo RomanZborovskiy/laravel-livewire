@@ -17,7 +17,7 @@
             <flux:navbar.item icon="home" href="/" wire:navigate >Home</flux:navbar.item>
             <flux:navbar.item icon="inbox" href="/product" wire:wire:navigate >Product</flux:navbar.item>
             <flux:navbar.item icon="document-text" href="/login" wire:wire:navigate>Login</flux:navbar.item>
-            <flux:navbar.item icon="calendar" href="#">Calendar</flux:navbar.item>
+            {{-- <flux:navbar.item icon="calendar" href="#">Calendar</flux:navbar.item>
             <flux:separator vertical variant="subtle" class="my-2"/>
             <flux:dropdown class="max-lg:hidden">
                 <flux:navbar.item icon:trailing="chevron-down">Favorites</flux:navbar.item>
@@ -26,13 +26,13 @@
                     <flux:navmenu.item href="/about" wire:wire:navigate>Android app</flux:navmenu.item>
                     <flux:navmenu.item href="#">Brand guidelines</flux:navmenu.item>
                 </flux:navmenu>
-            </flux:dropdown>
+            </flux:dropdown> --}}
         </flux:navbar>
         <flux:spacer />
         <flux:navbar class="me-4">
-            <flux:navbar.item icon="magnifying-glass" href="#" label="Search" />
+            {{-- <flux:navbar.item icon="magnifying-glass" href="#" label="Search" />
             <flux:navbar.item class="max-lg:hidden" icon="cog-6-tooth" href="#" label="Settings" />
-            <flux:navbar.item class="max-lg:hidden" icon="information-circle" href="#" label="Help" />
+            <flux:navbar.item class="max-lg:hidden" icon="information-circle" href="#" label="Help" /> --}}
             @livewire('shop.basket-icon')
         </flux:navbar>
         @auth
